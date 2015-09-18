@@ -14,7 +14,7 @@ describe "ES2016", () ->
             priProperty = 'a'
             { getProperty: -> priProperty }
 
-    objOAB = fnOAB()
+        objOAB = fnOAB()
 
-    should.not.exist objOAB.priProperty
-    objOAB.getProperty().should.to.equal 'a'
+        should.not.exist objOAB.priProperty
+        objOAB.getProperty().should.to.equal 'a'
